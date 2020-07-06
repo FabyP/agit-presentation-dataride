@@ -36,6 +36,10 @@
                 <img class="no-border" src="img/logo.jpg" height="170px" />
                 <h1>dataRide</h1>
                 <p>Android Applikation zur Messung der Auswirkung eines Tempolimits auf Autobahnen</p>
+                <aside class="notes">
+                    In diesem Vortrag geht es um die von uns entwickelte App dataride. Das ist eine Android Applikation,
+                    mit der wir versuchen die Auswirkungen eines Tempolimits auf Autobahnen messbar zu machen
+                </aside>
             </section>
 
             <section>
@@ -58,10 +62,48 @@
                         <img class="profile" data-src="img/Faby.jpg">
                     </div>
                 </div>
+                <aside class="notes">
+                    <ul>
+                        <li>
+                            Da wir uns ja jetzt nicht persönlich sehen, würde ich mich trotzdem ganz gerne kurz
+                            vorstellen
+                        </li>
+                        <li>Einfach damit sie ungefähr wissen, wer da mit ihnen spricht.</li>
+                        <li>Mein Name ist fabienne pipping</li>
+                        <li>Ich studiere Medieninformatik im Master an der Technische Hochschule Mittelhessen in
+                            Friedberg, das ist eine kleine Stadt ziemlich in der Mitte von Deutschland, nähe Frankfurt
+                        </li>
+                        <li>Unser Paper ist dort auch in Zusammenhang mit diesen Studiengang entstanden, in dem Modul
+                            fortgeschrittene Mensch Maschine Interaktion. Ich habe das auch nicht alleine geschrieben,
+                            sondern maßgeblich mitentwickelt und mitgeschrieben haben Mayra Fahrer und Jörg Pfister</li>
+                    </ul>
+                </aside>
             </section>
 
             <section data-background="img/motivation.jpg">
                 <h2 class="text-left test" style="color:#fff">Motivation</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Warum haben wir dataRide überhaupt entwickelt? Warum war das unser Projektthema?</li>
+                        <li>Es hing damit zusammen, dass im letzten Jahr das Thema Klimawandel sehr präsent war</li>
+                        <li>Dieses Jahr ist es Corona letztes Jahr war es der Klimawandel.</li>
+                        <li>Gerade durch Veranstaltungen wie fridays for future war es überall in dem Medien zu finden
+                            und es war eben auch ein großes Thema, welche Maßnahmen die Politik einleitet, um das von
+                            der EU geforderte Ziel der Klimaneutralität umzusetzen und dort entsprechend den CO2 Ausstoß
+                            zu reduzieren.</li>
+                        <li>Eine viel diskutierte Möglichkeit in Deutschland war das Tempolimit von 130 km/h auf
+                            Autobahnen, das letztes Jahr im Bundestag vorerst erst mal abgelehnt wurde, der deutsche
+                            Verkehrsminister bezeichnete das Tempolimit sogar als etwas, das gegen jeden
+                            Menschenverstand ginge.</li>
+                        <li>Wie viel CO2man tatsächlich mit dem Tempolimit sparen kann, da gehen die Meinungen sehr
+                            auseinander. Es gibt Studien, Komitees usw., die sagen gerade mal 0.5%, andere sagen 5 %
+                            Einsparung.</li>
+                        <li>Naja, die Welt rettet man hiermit vllt nicht dafür bringt es aber eben noch ein paar andere
+                            Vorteile mit sich wie flüssigerer Verkehr und eine bessere Verkehrssicherheit. Das
+                            Gegenargument schlechthin ist allerdings der durch die langsamere Reisegeschwindigkeit
+                            entstehende Zeitverlust.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -72,6 +114,23 @@
                 <p style="margin-top: 60px;" class="fragment fade-up">→ <strong>keine</strong> Beeinflussung der
                     Fahrweise und <strong>keine</strong> Bewertung eines
                     Tempolimits</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Genau hierfür haben wir die App dataride entwickelt</li>
+                        <li>Also dataride soll den User über die Auswirkungen seiner individuellen Fahrweise auf die
+                            gesparte / verlorene Zeit aufklären</li>
+                        <li>Indem wir eben für die Streckenabschnitte, die mit mehr als 130 km/h gefahren werden,
+                            berechnen wie lange hätten wir hier gebraucht, wenn wir nur 130 gefahren wären und aus der
+                            Differenz ergibt sich die Zeit, die wir mit Tempolimit länger gebraucht haben</li>
+                        <li>Wir wollen keinesfalls die Fahrweise beeinflussen oder das Tempolimit in irgendeiner Form
+                            bewerten, dataride dient als Grundlage dafür, dass jeder User individuell für sich sehen
+                            kann , wie groß sein Zeitverlust ist.</li>
+                        <li>Fokus des Papers war auch der Prozess der App Entwicklung, angefangen bei den
+                            Vorüberlegungen zum design, wir wollten das ganze möglichst ergonomisch, bis zur Auswahl und
+                            Filterung der GPS Daten (Wir verwenden da derzeit NMEA und haben dort, um Fehlerquellen zu
+                            minimieren, Qualitätsfilter eingebaut)</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -87,6 +146,23 @@
                         <img class="no-border" height="500px" data-src="img/stat.svg" alt="">
                     </div>
                 </div>
+                <aside class="notes">
+                    <ul>
+                        <li>Und so sieht jetzt unser Minimal Viable Product aus, das sind Screenshots mit Testdaten, in
+                            denen wir das Geschwindigkeitslimit runtergesetzt hatten</li>
+                        <li>Links haben wir unseren Screen, wo eben die aktuell getrackte Fahrt beobachtet werden kann
+                            (sehen die Geschwindigkeit und wie viel Zeit wir bisher gespart haben)</li>
+                        <li>In der Mitte haben wir eine Karte eingebaut. Ein zukünftiges Ziel ist es hier eben noch eine
+                            Navigation einzufügen.</li>
+                        <li>Und rechts sehen wir Statistiken zu Fahrten des letzten Monats, des letzten Jahres, also
+                            über verschiedene Zeiträume, damit der User auch sehen kann wie viel Zeit er langfristig
+                            verloren hat.</li>
+                        <li>Was wir hierzusätzlich gemacht haben sind den ungefähren Spritverbrauch und Co2 Ausstoß
+                            ausgerechnet, der User kann in den Einstellungen seinen Durchschnittsverbrauch und seine
+                            Kraftstoffart angeben (Benzin, Diesel) und bekommt dann eben ungefähre werte zu dem
+                            Verbrauch / Ausstoß angezeigt.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -142,11 +218,40 @@
                         </tr>
                     </tbody>
                 </table>
+                <aside class="notes">
+                    <ul>
+                        <li>Hier habe ich ein paar interessante Testfahrten mitgebracht</li>
+                        <li>Die ersten beide sind eine typische Pendlerstrecke (Frankfurt Gießen) -> interessant war
+                            hierbei, dass wir hier kaum Zeit einsparen konnten, weil wir nicht wirklich schneller als
+                            130 fahren konnten, wegen Baustellen, Verkehrsaufkommen usw. -> hier kann unser Tempolimit
+                            in der App also gar nicht wirklich greifen (minimale Einsparungen von wenigen Sekunden bis
+                            Minuten)</li>
+                        <li>Wo es sich hingegen schon auswirkt ist bei längeren Fahrten (3. Testfahrt) bei einer strecke
+                            von fast 500km haben wir eine fast eine halbe stunde sparen können, waren aber auch 340 km
+                            davon schneller als 130 unterwegs</li>
+                        <li>Die vierte Testfahrt ist auch rechtinteressant, die war von den Niederlanden nach
+                            Deutschland, 53 km war unser Testfahrer schneller als 130kmh und hat ca. 3,5min zeit
+                            eingespart.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
                 <h2>Geschwindigkeitsprofil</h2>
                 <img class="pic-center no-border" data-src="img/dataride_vel_over_distance.jpg" data-fragment-index="1">
+                <aside class="notes">
+                    <ul>
+                        <li>Hier sieht man das Geschwindgkeitsprofil dieser Fahrt, in den Niederlanden haben wir
+                            zunächst noch ein Tempolimit, in Deutschland wurde dann Gas gegeben, der Testfahrer ist
+                            meisten um die 160kmh gefahren, das interessante hierbei war aber, dass er auf dieser
+                            Strecke eine Zeitersparnis von ca. 15 min erwartet hat. Es waren aber nur 3-4 min. Diese
+                            Selbsteinschätzung hat sich auch im Gespräch mit den anderen Testfahrern abgezeichnet, es
+                            wurde eine viel größerer Zeitersparnis erwartet.</li>
+                        <li>Das wäre eine interessante Untersuchung für die Zukunft -> eine Gegenüberstellung der
+                            tatsächlichen gesparten Zeit und der erwarteten gesparten Zeit, also der subjektiven
+                            Selbsteinschätzung</li>
+                    </ul>
+                </aside>
             </section>
 
             <!--<section>
@@ -160,6 +265,18 @@
 
             <section data-background="img/fazit.jpg">
                 <h2 class="text-left" style="color:#fff">Fazit</h2>
+                <aside class="notes">
+                    <ul>
+                        <li>Als kurzes Fazit:</li>
+                        <li>Unser MinimalViableProduct steht (Primärer Fokus lag auf der Entwicklung der App), bei den
+                            Testfahrten sind auch keine Fehler aufgetreten</li>
+                        <li>Hier würden wir aber gerne noch deutlich mehr Testfahrten machen (durch Corona kam das ganze
+                            leider zum erliegen)</li>
+                        <li>Und wir würden gerne untersuchen, wie der Unterschied zwischen der erwarteten Zeitersparnis
+                            und der tatsächlichen aussieht. Das war nur ein interessanter Aspekt, der sich im Gespräch
+                            mit unseren Testfahrern abgezeichnet hatte und der eine Untersuchung wert ist.</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -167,6 +284,12 @@
                     <iframe data-src="https://giphy.com/embed/XHVmD4RyXgSjd8aUMb" width="480" height="360"
                         frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                 </a>
+                <aside class="notes">
+                    <ul>
+                        <li>Ich bedanke mich recht herzlich für ihre Aufmerksamkeit</li>
+                        <li>Wenn es Fragen, Bemerkungen, Anregungen gibt, können Sie die gerne im Chat stellen oder mir privat</li>
+                    </ul>
+                </aside>
             </section>
         </div>
     </div>
